@@ -1,0 +1,36 @@
+@use "../../assets/styles/mixins/fontsFamilies";
+@use "../../assets/styles/mixins/fontsStyles";
+@use "../../assets/styles/vars/colors";
+
+.input {
+	@include fontsFamilies.MontserratRegular;
+	@include fontsStyles.TextXS;
+
+	width: 100%;
+
+	padding: 15px 20px;
+
+	border-radius: 5px 5px 0 0;
+	border-bottom: 2px solid colors.$grey60;
+	color: colors.$black;
+
+	background-color: colors.$grey05 ;
+
+	&::placeholder {
+
+		color: colors.$grey65;
+	}
+
+	&darkest{
+		color: colors.$black;
+		background-color: colors.$grey10 ;
+		border-bottom: 2px solid colors.$black;
+
+		&::placeholder {
+			color: colors.$grey70;
+		}
+
+	}
+
+}
+

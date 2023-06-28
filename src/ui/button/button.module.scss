@@ -1,0 +1,26 @@
+@use "../../assets/styles/vars/colors";
+@use "../../assets/styles/mixins/fontsStyles";
+@use "../../assets/styles/mixins/fontsFamilies";
+
+.btn {
+	@include fontsStyles.TextMD;
+	@include fontsFamilies.MontserratSemiBold;
+
+	display: inline-block;
+
+	padding: 0.625em;
+	border: 1px solid transparent;
+	border-radius: .5em ;
+
+	color: colors.$white100;
+	background: colors.$red100;
+
+	&:focus, &:active {
+		border: 1px solid colors.$black;
+	}
+
+	&Disabled {
+		opacity: .4;
+		cursor: default;
+	}
+}
