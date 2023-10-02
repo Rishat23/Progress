@@ -1,0 +1,61 @@
+@use '../../assets/styles/vars/colors';
+@use "../../assets/styles/mixins/fontsStyles";
+
+
+.wrapper{
+	margin: 3.125em;
+}
+
+.footer{
+	@include fontsStyles.TextXS;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 4em;
+	&Navbar{
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+
+.content{
+	@include fontsStyles.TextXS;
+
+
+	display: flex;
+	justify-content: space-between;
+
+}
+.copyright{
+	display: flex;
+	flex-direction: column;
+	gap: 1.25em;
+
+}
+.socialNetwork{
+	display: flex;
+	gap: 1.25em;
+
+	&YouTube::before{
+		content: url("../../assets/icons/youtube.svg");
+		}
+	&VK::before{
+		content: url("../../assets/icons/vk.svg");
+	}
+}
+
+.support{
+	display: flex;
+	flex-direction: column;
+	gap: 0.344em;
+
+	align-items: self-end;
+
+	a{
+		color: colors.$black;
+	}
+
+}
+

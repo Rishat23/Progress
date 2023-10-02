@@ -5,12 +5,13 @@ import toCapitalize from '../../../utils/toCapitalize'
 import cl from '../input.module.scss'
 
 function NameInput({ onChange, disabled, type, colorStyle, containerClassName, ...props }) {
-	const [inputValue, setInputValue] = useState('')
+	const [name, setName] = useState('')
 
 	const handleChange = (event) => {
 		const { value } = event.target
-		setInputValue(value)
+		setName(value)
 	}
+
 	const classNames = cn([
 		cl.input,
 		{
@@ -22,7 +23,7 @@ function NameInput({ onChange, disabled, type, colorStyle, containerClassName, .
 		<input
 			className={classNames}
 			placeholder="Введите ваше имя:"
-			value={inputValue}
+			value={name}
 			disabled={disabled}
 			onChange={handleChange}
 			{...props}

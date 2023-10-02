@@ -1,0 +1,10 @@
+@use '../../../assets/styles/vars/colors';
+.navbar{
+	display: flex;
+	gap: 0.625em;
+
+	.link {
+		color: colors.$black;
+		border-bottom: 1px solid colors.$black;
+	}
+}

@@ -1,0 +1,22 @@
+@use "../../assets/styles/vars/colors";
+@use "../../assets/styles/mixins/fontsStyles";
+@use "../../assets/styles/mixins/fontsFamilies";
+
+
+.header{
+	display: flex;
+	justify-content: space-between;
+
+	.content{
+		padding: 1.093em;
+		display: flex;
+		gap: 1.25em;
+		align-items: center;
+	}
+}
+
+.wrapper{
+	background-color: colors.$white100;
+	border-bottom: 1px solid colors.$black;
+
+}

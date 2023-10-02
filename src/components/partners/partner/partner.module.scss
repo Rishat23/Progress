@@ -1,0 +1,14 @@
+@use '../../../assets/styles/mixins/fontsStyles';
+
+.partner{
+	@include fontsStyles.TextLG;
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.9375em;
+
+	a::before{
+		content: url("../../../assets/icons/star.svg");
+	}
+
+}

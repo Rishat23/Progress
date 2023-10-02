@@ -1,0 +1,20 @@
+@use "../../assets/styles/vars/colors";
+@use "../../assets/styles/mixins/fontsStyles";
+@use "../../assets/styles/mixins/fontsFamilies";
+
+.logo{
+	display: flex;
+	gap: 5px;
+	align-items: center;
+
+	.img{
+		width: 32px;
+		height: 19px;
+
+	}
+	.text{
+		@include fontsFamilies.MontserratMedium;
+		@include fontsStyles.TextMD;
+		color: colors.$black;
+	}
+}

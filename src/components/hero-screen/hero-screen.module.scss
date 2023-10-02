@@ -1,0 +1,28 @@
+@use '../../assets/styles/vars/colors';
+@use '../../assets/styles/mixins/fontsStyles';
+@use '../../assets/styles/mixins/fontsFamilies';
+
+
+.heroScreen{
+	background: linear-gradient(90deg, #363F4F 21.51%, #788399 74.04%);
+
+	.content{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 30px;
+		padding: 5.25em;
+
+	}
+
+	.textWrapper{
+		color: colors.$white100;
+		width: 100%;
+		max-width: 28.4%;
+
+		.smallText{
+			@include fontsFamilies.MontserratLight;
+			@include fontsStyles.DisplayMD;
+		}
+	}
+}

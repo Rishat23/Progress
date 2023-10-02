@@ -1,19 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
 
-import { Button, ButtonLink } from '../../ui'
-import NameInput from '../../ui/input/nameInput'
+import Footer from '../footer'
+import Header from '../header'
+import HeroScreen from '../hero-screen'
+import Mailing from '../mailing'
+import News from '../news'
+import Partners from '../partners'
+import Tabs from '../tabs'
 
 function App() {
-	const [disabled, setDisabled] = useState(true)
-
 	return (
 		<>
-			<Button onClick={() => setDisabled(false)}>Получить консультацию</Button>
-			<ButtonLink href="/соси" disabled={disabled}>
-				Получить консультацию
-			</ButtonLink>
-			<NameInput />
-			<NameInput colorStyle="darkest" />
+			<Header />
+			<HeroScreen />
+			<Tabs />
+			<Mailing />
+			<Partners />
+			<News />
+			<Footer />
 		</>
 	)
 }

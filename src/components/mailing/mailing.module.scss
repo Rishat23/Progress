@@ -1,0 +1,56 @@
+@use "../../assets/styles/vars/colors";
+@use "../../assets/styles/mixins/fontsStyles";
+@use "../../assets/styles/mixins/fontsFamilies";
+
+
+.wrapper{
+	margin: 3.125em;
+
+
+}
+.mailing{
+	background: url("../../assets/images/mailing-bg.jpg") 0/cover no-repeat;
+	border-radius: 1.25em;
+	padding: 1.5625em 5em;
+	display: flex;
+	flex-direction: column;
+	gap: 1.875em;
+
+
+	.title{
+		display: flex;
+		flex-direction: column;
+
+		h2{
+			text-transform: uppercase;
+		}
+		p{
+			@include fontsStyles.DisplayMD;
+			@include fontsFamilies.MontserratLight;
+
+			text-align: center;
+		}
+
+	}
+	.footer{
+		@include fontsStyles.TextXS;
+
+		color: colors.$black70;
+		display: flex;
+		align-items: center;
+		padding: .84em 0.9375em;
+		justify-content: space-between;
+		background-color: colors.$white90;
+		border-radius: 0.3125em;
+
+		.description{
+			display: flex;
+			align-items: center;
+			gap: 0.9375em;
+			&::before{
+				content: url("../../assets/icons/shild.svg");
+			}
+		}
+	}
+}
+

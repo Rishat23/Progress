@@ -1,0 +1,54 @@
+@use '../../../assets/styles/vars/colors';
+@use '../../../assets/styles/mixins/fontsStyles';
+@use '../../../assets/styles/mixins/fontsFamilies';
+
+.card{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 31%;
+	gap: .625em;
+
+}
+.img{
+	background-color: colors.$red40;
+	border-radius: .625em .625em 0 0  ;
+	height: 239px;
+	width: 384px;
+	margin-bottom: -7px;
+}
+.footer{
+	@include fontsStyles.TextXS;
+
+	display: flex;
+	justify-content: space-between;
+
+	.event{
+		@include fontsFamilies.MontserratBold;
+
+		width: 50%;
+		text-align: center;
+
+		background-color: colors.$red100 ;
+
+		border-radius: 0 0 0 0.625em;
+		color: colors.$white100;
+		text-transform: uppercase;
+	}
+	.data{
+		text-align: center;
+		width: 50%;
+
+		background-color: colors.$grey20 ;
+		border-radius: 0 0 .625em 0;
+
+	}
+}
+
+
+.textWrapper{
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.625em;
+}

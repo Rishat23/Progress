@@ -1,0 +1,19 @@
+.content {
+	margin: 3.125em;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	gap: 3.125em;
+
+	.partners{
+		display: flex;
+		justify-content: space-between;
+}
+
+}
+
+h2{
+	text-transform: uppercase;
+}

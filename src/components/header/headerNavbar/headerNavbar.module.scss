@@ -1,0 +1,16 @@
+@use '../../../assets/styles/mixins/fontsFamilies';
+@use '../../../assets/styles/mixins/fontsStyles';
+@use '../../../assets/styles/vars/colors';
+
+.navbar{
+	@include fontsFamilies.MontserratRegular;
+	@include fontsStyles.TextMD;
+
+	display: flex;
+	gap: 1.25em ;
+	align-items: center;
+
+	.link{
+		color: colors.$black;
+	}
+}
